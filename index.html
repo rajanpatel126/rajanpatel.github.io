@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>Responsive Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<title>Responsive Layout</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#" id="#top">Food, LLC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div id="dextop">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Chicken"
+                  >Chicken</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Beef"
+                  >Beef</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Shushi"
+                  >Shushi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1 class="my-3">Our Menu</h1>
+    
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <p class="content-name name2" id="#Beef">Chicken</p>
+      <p class="content">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim.<br />
+      </p>
+    </div>
 
-</head>
-<body>
-<h1>Our Menu</h1>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <!-- <div class="box"> -->
+      <p class="content-name name2" id="#Beef">Beef</p>
+      <p class="content">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim.<br />
+        (End to Beef section) <a href="#top">Back To Top</a>
+      </p>
+      <!-- </div> -->
+    </div>
 
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <!-- <div class="box"> -->
+      <p class="content-name name3" id="#Shushi">Shushi</p>
+      <p class="content">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim.<br />
+        (End of Shushi) <a href="#top">Back To Top</a>
+      </p>
 
-
-  <div class="col-lg-4 col-md-6 col-sm-12">
-  	<div class="box">
-  		<p class="content-name name1">Chicken</p>
-  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-  	</div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 col-sm-12">
-  	<div class="box">
-   		<p class="content-name name2">Beef</p>
-   		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-  	</div>
-  </div>
-
-  <div class="col-lg-4 col-md-12 col-sm-12">
-  	<div class="box">
-  		<p class="content-name name3">Sushi</p>
-  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-  	</div>	
-  </div>
-
-</body>
+      <!-- </div> -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
